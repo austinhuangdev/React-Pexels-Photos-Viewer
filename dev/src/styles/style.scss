@@ -1,0 +1,164 @@
+// 定義顏色變數
+$nav-background-color: #333333; // 深灰色
+$footer-background-color: #333333; // 深灰色
+$primary-color: #555555; // 中灰色
+$hover-color: #777777; // 淺灰色
+
+// 全局樣式
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+// 導航列樣式
+.nav {
+  background-color: $nav-background-color;
+  padding: 1rem 0; // 調整上下 padding，增加空間感
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; // 讓連結居中顯示
+
+    li {
+      margin: 0 1rem; // 調整連結之間的間距
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em; // 增大字體大小
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+// 照片列表樣式
+.photos {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .photo {
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px solid $primary-color;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .imageContainer {
+      max-width: 300px;
+      max-height: 300px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .download {
+      margin-top: 8px;
+
+      p {
+        margin: 0;
+      }
+
+      .downloadLink {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+// 搜尋欄樣式
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+
+  .input {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      border-color: $hover-color;
+      box-shadow: 0 4px 8px rgba(228, 77, 38, 0.2);
+    }
+  }
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background: linear-gradient(to right, $primary-color, $hover-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    background: $hover-color;
+  }
+}
+
+.morePhotos {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Footer 樣式
+.footer {
+  background-color: $footer-background-color;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.myPhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 陰影效果
+  border: 2px solid $primary-color; // 白色邊框
+}

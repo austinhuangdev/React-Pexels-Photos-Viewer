@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.nav {
+  background-color: #333333;
+  padding: 1rem 0;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.nav ul li {
+  margin: 0 1rem;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+.nav ul li a:hover {
+  color: #777777;
+}
+
+.photos {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photos .photo {
+  margin: 1rem;
+  padding: 1rem;
+  border: 5px solid #555555;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.photos .photo .imageContainer {
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.photos .photo .imageContainer img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.photos .photo .imageContainer img:hover {
+  transform: scale(1.1);
+}
+.photos .photo .download {
+  margin-top: 8px;
+}
+.photos .photo .download p {
+  margin: 0;
+}
+.photos .photo .download .downloadLink {
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.photos .photo .download .downloadLink:hover {
+  color: #777777;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.search .input {
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.search .input:focus {
+  outline: none;
+  border-color: #777777;
+  box-shadow: 0 4px 8px rgba(228, 77, 38, 0.2);
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background: linear-gradient(to right, #555555, #777777);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #777777;
+}
+
+.morePhotos {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.myPhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #555555;
+}/*# sourceMappingURL=style.css.map */
